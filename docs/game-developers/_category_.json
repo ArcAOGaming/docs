@@ -1,0 +1,8 @@
+{
+  "label": "🖥️ Game Developers",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Resources and documentation for game developers building on ArcAO."
+  }
+}
