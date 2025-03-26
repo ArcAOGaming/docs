@@ -6,25 +6,56 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* ArcAO Silver Theme - Light Mode */
+  --ifm-color-primary: #808080; /* Main silver */
+  --ifm-color-primary-dark: #707070;
+  --ifm-color-primary-darker: #606060;
+  --ifm-color-primary-darkest: #505050;
+  --ifm-color-primary-light: #909090;
+  --ifm-color-primary-lighter: #A0A0A0;
+  --ifm-color-primary-lightest: #B0B0B0;
+  
+  /* Background and text colors */
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #1a1a1a;
+  
+  /* Code block styling */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Other UI elements */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #1a1a1a;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* ArcAO Silver Theme - Dark Mode */
+  --ifm-color-primary: #C0C0C0; /* Lighter silver for dark mode */
+  --ifm-color-primary-dark: #B0B0B0;
+  --ifm-color-primary-darker: #A0A0A0;
+  --ifm-color-primary-darkest: #909090;
+  --ifm-color-primary-light: #D0D0D0;
+  --ifm-color-primary-lighter: #E0E0E0;
+  --ifm-color-primary-lightest: #F0F0F0;
+  
+  /* Background and text colors */
+  --ifm-background-color: #121212;
+  --ifm-font-color-base: #f5f5f5;
+  
+  /* Code block styling */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  
+  /* Other UI elements */
+  --ifm-navbar-background-color: #1a1a1a;
+  --ifm-footer-background-color: #000000;
+}
+
+/* Additional custom styles for ArcAO branding */
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-primary);
+}
+
+.footer {
+  border-top: 1px solid var(--ifm-color-primary-darkest);
 }

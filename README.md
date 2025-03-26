@@ -1,7 +1,7 @@
-# ArcAO Docusaurus + ARIO Template
+# ArcAO Documentation Website
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://docs-template_game.permagate.io/)
+[![Live Website](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://docs-arcao_game.ar.ionode.online/)
 
 </div>
 
@@ -28,5 +28,3 @@ npm build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment

@@ -1,57 +1,73 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Game Developers',
+    emoji: '🎮',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Resources, guides, and technical documentation for developers building games on the ArcAO platform.
       </>
     ),
+    link: '/docs/game-developers/overview',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Content Creators',
+    emoji: '🎨',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Tools, resources, and guides for content creators looking to engage with the ArcAO ecosystem.
       </>
     ),
+    link: '/docs/content-creators/overview',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Gamers',
+    emoji: '🏆',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Resources and guides for gamers looking to play and engage with games in the ArcAO ecosystem.
       </>
     ),
+    link: '/docs/gamers/overview',
+  },
+  {
+    title: 'Investors',
+    emoji: '💰',
+    description: (
+      <>
+        Investment opportunities, tokenomics information, and governance participation in the ArcAO ecosystem.
+      </>
+    ),
+    link: '/docs/investors/overview',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, emoji, description, link}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className={clsx('col col--3')}>
+      <Link to={link} className={styles.featureLink}>
+        <div className="text--center">
+          <div className={styles.featureEmoji} role="img" aria-label={title}>
+            {emoji}
+          </div>
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+        </div>
+      </Link>
     </div>
   );
 }

@@ -1,47 +1,69 @@
 ---
+title: Start Here
+description: The AAA Game Development DAO leading the GameFi Revolution.
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# 🎮 Welcome to **ArcAO**  
+## *The AAA Game Development DAO*
 
-Let's discover **Docusaurus in less than 5 minutes**.
+---
 
-## Getting Started
+> **"Where GameFi meets the Permaweb."**
 
-Get started by **creating a new site**.
+ArcAO is a **global, decentralized collective** of over **5,000 Game Developers, Content Creators, Marketers, Investors, and Gamers**.  
+Together, we are driving the **GameFi Revolution**, building the future of gaming **by the community, for the community**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+---
 
-### What you'll need
+## 🌍 A Global Force in GameFi  
+From **Paris to Prague**, **New York to Beijing**, ArcAO is powered by a diverse range of talent and culture.  
+We are **united by a passion for gaming**, and a mission to make next-gen AAA game development **accessible, decentralized, and permanent**.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+---
 
-## Generate a new site
+## 🛠️ Built on the **Permaweb**  
+All ArcAO-developed games are hosted **permanently** and made **freely accessible to everyone**.  
+Our foundation on the **Permaweb** ensures:
 
-Generate a new Docusaurus site using the **classic template**.
+- ✅ Eternal access to games
+- 🔒 Censorship resistance
+- 🔄 Immutable histories of development
 
-The classic template will automatically be added to your project after you run the command:
+---
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## 🎯 What Makes ArcAO Different?
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- 💥 **DAO-Powered:** All decisions are made by the community, not centralized gatekeepers.
+- 🚀 **AAA Quality Games:** High-end production, community-funded and community-owned.
+- 💎 **Web3 Infrastructure:** Empowering creators with NFT economies, token incentives, and more.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+---
 
-## Start your site
+## 🔗 Join the Revolution
 
-Run the development server:
+Are you a:
 
-```bash
-cd my-website
-npm run start
-```
+- 🎨 Developer?  
+- 📢 Content Creator?  
+- 🎮 Gamer?  
+- 💼 Investor?  
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+**ArcAO needs you.**  
+Let’s build the **future of gaming**, together.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+---
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## 📚 Explore More
+
+Check out our documentation sections:
+
+- [Game Developers](./game-developers/overview.md) - Resources for building games on ArcAO
+- [Content Creators](./content-creators/overview.md) - Tools and guides for creators
+- [Gamers](./gamers/overview.md) - How to play and engage with ArcAO games
+- [Investors](./investors/overview.md) - Investment opportunities and governance
+
+---
+
+✨ **ArcAO — Power to the Players. Forever.**
