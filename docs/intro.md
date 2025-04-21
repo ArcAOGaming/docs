@@ -59,9 +59,9 @@ Let’s build the **future of gaming**, together.
 
 Check out our documentation sections:
 
-- [Game Developers](./game-developers/overview.md) - Resources for building games on ArcAO
-- [Content Creators](./content-creators/overview.md) - Tools and guides for creators
-- [Gamers](./gamers/overview.md) - How to play and engage with ArcAO games
+- [Game Developers](./game-developers/overview.mdx) - Resources for building games on ArcAO
+- [Content Creators](./content-creators/overview.mdx) - Tools and guides for creators
+- [Gamers](./gamers/overview.mdx) - How to play and engage with ArcAO games
 - [Investors](./investors/overview.md) - Investment opportunities and governance
 
 ---

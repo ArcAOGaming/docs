@@ -3,6 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+import { ARCAO, RANDAO, RUNEREALM } from '@arcaogaming/project-links';
 
 const config: Config = {
   title: 'ArcAO Docs',
@@ -10,7 +11,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs_game.ar.ionode.online',
+  url: ARCAO.docs,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -33,8 +34,20 @@ const config: Config = {
           editUrl:
             'https://github.com/ArcAOGaming/docs/tree/main/',
         },
-        blog: false, // Optional: disable the blog plugin
-        theme: {
+        blog: {
+          path: 'news',
+          routeBasePath: 'news',
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // editUrl:
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
+          theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
@@ -52,15 +65,15 @@ const config: Config = {
         srcDark: 'img/logo_transparent_cleaned.png',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Documentation',
-        // },
-        // {to: '/blog', label: 'Updates', position: 'left'},
         {
-          href: 'https://github.com/ArcAOGaming',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Info',
+        },
+        { to: '/news', label: 'Latest News', position: 'left' },
+        {
+          href: ARCAO.github,
           label: 'GitHub',
           position: 'right',
         },
@@ -74,15 +87,15 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/arc-ao',
+              href: ARCAO.discord,
             },
             {
               label: 'Telegram',
-              href: 'https://t.me/ArcAOGames',
+              href: ARCAO.telegram,
             },
             {
               label: 'Twitter',
-              href: 'https://x.com/Arc_AO',
+              href: ARCAO.twitter,
             },
           ],
         },
@@ -91,11 +104,11 @@ const config: Config = {
           items: [
             {
               label: 'Website',
-              href: 'https://arcao_game.ar.ionode.online',
+              href: ARCAO.website,
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/ArcAOGaming',
+              href: ARCAO.github,
             },
           ],
         },
