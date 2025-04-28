@@ -1,12 +1,12 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 import { ARCAO, RANDAO, RUNEREALM } from '@arcaogaming/project-links';
 
 const config: Config = {
-  title: 'ArcAO Docs',
+  title: 'ArcAO',
   tagline: 'AAA Game Development DAO',
   favicon: 'img/favicon.ico',
 
@@ -47,7 +47,7 @@ const config: Config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
-          theme: {
+        theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
@@ -58,7 +58,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/social-card.jpg',
     navbar: {
-      title: 'ArcAO Docs',
+      title: 'ArcAO',
       logo: {
         alt: 'ArcAO Logo',
         src: 'img/logo_light_mode.png',
