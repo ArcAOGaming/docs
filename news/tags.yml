@@ -7,3 +7,8 @@ accelerator:
   label: Accelerator
   permalink: /accelerator
   description: Information about the ArcAO Accelerator
+
+ambassador:
+  label: Ambassador
+  permalink: /ambassador
+  description: Information about the ArcAO Ambassador Program
