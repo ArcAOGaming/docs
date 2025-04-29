@@ -38,6 +38,8 @@ const config: Config = {
           path: 'news',
           routeBasePath: 'news',
           showReadingTime: true,
+          blogTitle: 'News',
+          blogDescription: 'ArcAO News and Updates',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
