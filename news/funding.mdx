@@ -28,11 +28,12 @@ Our last wave included **80 dedicated content creators**, carefully vetted from 
 ArcAO keeps a pooled stake in the GameFi projects it accelerates. Profits from winners are reinvested into future projects—fueling a self-perpetuating GameFi growth engine.
 
 ---
-import Plot from 'react-plotly.js';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 <BrowserOnly>
-{() => <Plot
+{() => {
+  const Plot = require('react-plotly.js').default;
+  return <Plot
   data={[
     {
       type: 'pie',
@@ -68,7 +69,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
     plot_bgcolor: 'rgba(0,0,0,0)',
     margin: { t: 40, b: 40, l: 40, r: 40 },
   }}
-/>}
+/>}}
 </BrowserOnly>
 
 
