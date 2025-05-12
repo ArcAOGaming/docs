@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-import { ARCAO, RANDAO, RUNEREALM } from '@arcaogaming/project-links';
+import { AO, ARCAO, RANDAO, RUNEREALM } from '@arcaogaming/project-links';
 
 const config: Config = {
   title: 'ArcAO',
