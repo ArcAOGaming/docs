@@ -29,8 +29,10 @@ ArcAO keeps a pooled stake in the GameFi projects it accelerates. Profits from w
 
 ---
 import Plot from 'react-plotly.js';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Plot
+<BrowserOnly>
+{() => <Plot
   data={[
     {
       type: 'pie',
@@ -66,8 +68,8 @@ import Plot from 'react-plotly.js';
     plot_bgcolor: 'rgba(0,0,0,0)',
     margin: { t: 40, b: 40, l: 40, r: 40 },
   }}
-/>
-
+/>}
+</BrowserOnly>
 
 
 When you delegate to ArcAO, you’re delegating to the future of GameFi 🎮
