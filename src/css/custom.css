@@ -8,6 +8,7 @@
 :root {
   /* ArcAO Silver Theme - Light Mode */
   --ifm-color-primary: #808080;
+  --ifm-link-color: #0000FF;
   /* Main silver */
   --ifm-color-primary-dark: #707070;
   --ifm-color-primary-darker: #606060;
