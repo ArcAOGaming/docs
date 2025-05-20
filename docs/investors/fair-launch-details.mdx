@@ -1,0 +1,150 @@
+---
+title: Fair Launch Details
+description: Specifics on ArcAO's Fair Launch Distribution
+sidebar_position: 2
+---
+
+import { ARCAO, AO } from '@arcaogaming/project-links';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# ArcAO Fair Launch
+
+ArcAO's <a href={ARCAO.fairLaunchProjectsExplanation} target="_blank">Fair Launch</a> will begin on **XX/XX/XXXX**.
+
+Total token supply will be **1 billion $ARCAO tokens**, with distribution kicking off at launch.
+
+Tokens become **transferable two weeks** after the initial fair launch date.
+
+# Participation in The Permaweb Index
+
+ArcAO will be the **first token to join the** <a href={ARCAO.permawebIndexExplanation} target="_blank">Permaweb Index</a> after its initial launch on **3/14/25 (PI Day)**.
+
+# Use of Funds
+
+Funds raised during the fair launch will be used to:
+
+- **Invest in early-stage #GameFi projects** through our <a href={ARCAO.acceleratorProgramSignup} target="_blank">Accelerator Program</a>
+- **Market those projects** through our <a href={ARCAO.ambassadorProgramSignup} target="_blank">Ambassador Program</a>
+
+For full funding details, see our <a href={ARCAO.useOfFundsExplanation} target="_blank">Funding ArcAO Overview</a>.
+
+---
+# Tokenomics
+
+**Total Supply: 1,000,000,000 $ARCAO Tokens**
+
+<BrowserOnly>
+{() => {
+  const Plot = require('react-plotly.js').default;
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <Plot
+        data={[{
+          type: 'pie',
+          values: [15, 5, 5, 5, 70],
+          labels: ['Team', 'Airdrops', 'Strategic Partnerships', 'Liquidity Pairing', 'Fair Launch'],
+          textinfo: 'label+percent',
+          textposition: 'outside',
+          hole: 0.4,
+          marker: {
+            colors: ['#aa00ff', '#FFC107', '#3F51B5', '#00BCD4', '#00FF99'],
+            line: { color: 'var(--ifm-font-color-base)', width: 2 }
+          },
+          textfont: {
+            size: 16,
+            color: ['#aa00ff', '#FFC107', '#3F51B5', '#00BCD4', '#00FF99']
+          }
+        }]}
+        layout={{
+          title: {
+            text: 'ArcAO Token Distribution',
+            font: { size: 20, color: 'var(--ifm-font-color-base)' }
+          },
+          showlegend: false,
+          paper_bgcolor: 'rgba(0,0,0,0)',
+          plot_bgcolor: 'rgba(0,0,0,0)',
+          margin: { t: 40, b: 40, l: 80, r: 80 },
+          width: 1000,
+          height: 600,
+        }}
+      />
+    </div>
+  );
+}}
+</BrowserOnly>
+
+### Distribution Rationale
+- **Fair Launch (70%)** — The majority of tokens are distributed transparently to the community via a fair launch.
+- **Team (15%)** — Reserved to support long-term protocol development and alignment.
+- **Airdrops (5%)** — To incentivize early community engagement and active participation.
+- **Strategic Partnerships (5%)** — For key integrations, co-marketing, and technical collaboration.
+- **Liquidity Pairing (5%)** — Ensures token availability and price stability post-launch.
+
+> **0% allocated to VCs.** ArcAO is a project truly for the builders and believers—not early private buyers.
+
+<BrowserOnly>
+{() => {
+  const Plot = require('react-plotly.js').default;
+  const now = new Date();
+  const launchDate = new Date('2025-03-14');
+  const daysSinceLaunch = Math.floor((now - launchDate) / (1000 * 60 * 60 * 24));
+  const totalFairLaunch = 700_000_000;
+  const decayRate = 0.999;
+  const days = Array.from({ length: 1000 }, (_, i) => i);
+  const released = days.map(day => totalFairLaunch * (1 - Math.pow(decayRate, day)));
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <Plot
+        data={[
+          {
+            x: days,
+            y: released,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Released Tokens',
+            line: { color: '#00FF99' }
+          },
+          {
+            x: [daysSinceLaunch],
+            y: [totalFairLaunch * (1 - Math.pow(decayRate, daysSinceLaunch))],
+            mode: 'lines+markers',
+            name: 'Today',
+            marker: { size: 10, color: '#FF3366' },
+            line: { dash: 'dot', color: '#FF3366' }
+          }
+        ]}
+        layout={{
+          title: {
+            text: 'Fair Launch Release Over Time',
+            font: { size: 20, color: 'var(--ifm-font-color-base)' }
+          },
+          xaxis: { 
+            title: 'Days Since Launch',
+            color: 'var(--ifm-font-color-base)'
+          },
+          yaxis: { 
+            title: 'Cumulative Released Tokens (Fair Launch)',
+            color: 'var(--ifm-font-color-base)'
+          },
+          paper_bgcolor: 'rgba(0,0,0,0)',
+          plot_bgcolor: 'rgba(0,0,0,0)',
+          margin: { t: 40, b: 40, l: 60, r: 40 },
+          width: 1000,
+          height: 600,
+          font: {
+            color: 'var(--ifm-font-color-base)'
+          }
+        }}
+      />
+    </div>
+  );
+}}
+</BrowserOnly>
+
+This exponential release model ensures that **everyone has an equal chance** to participate. Those who delegate early are **rewarded with more tokens**, while long-term availability is preserved for the community.
+
+# How to Participate
+
+- **For maximum rewards**: Delegate **AO Yield** directly via the <a href={ARCAO.delegate} target="_blank">ArcAO Fair Launch Site</a>.
+- **Alternative option**: Participate through **direct or surrogate delegation** via the <a href={AO.delegate} target="_blank">Permaweb Index</a>.
