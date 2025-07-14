@@ -74,6 +74,7 @@ const config: Config = {
           label: 'Info',
         },
         { to: '/news', label: 'Latest News', position: 'left' },
+        { to: '/media-kit', label: 'Media Kit', position: 'left' },
         {
           href: ARCAO.github,
           label: 'GitHub',
