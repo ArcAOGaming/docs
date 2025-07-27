@@ -9,6 +9,7 @@ interface FontExample {
         name: string;
         sample: string;
     }[];
+    usage?: string;
 }
 
 const fonts: FontExample[] = [
