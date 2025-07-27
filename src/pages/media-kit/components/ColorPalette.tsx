@@ -21,23 +21,23 @@ const brandColors: ColorSwatch[] = [
     },
     {
         name: 'Green',
-        hex: 'rgba(34, 197, 94, 1)',
+        hex: '#22C55E',
         description: 'Represents Minting of $GAME.'
     },
     {
         name: 'Purple',
-        hex: 'rgba(147, 51, 234, 1)',
+        hex: '#9333EA',
         description: 'Represents Creating Games & Content in the $GAME Ecosystem.'
     },
     {
         name: 'Blue',
-        hex: 'rgba(59, 130, 246, 1)',
+        hex: '#3B82F6',
         description: 'Represents Playing Games in the $GAME Ecosystem.'
     },
     {
         name: 'Yellow',
-        hex: 'rgba(245, 158, 11, 1)',
-        description: 'Represents Earning in the &GAME Ecosystem.'
+        hex: '#F59E0B',
+        description: 'Represents Earning in the $GAME Ecosystem.'
     },
     {
         name: 'Gradient',
@@ -57,36 +57,39 @@ export default function ColorPalette(): JSX.Element {
 
     return (
         <div className={styles.colorGrid}>
-            {brandColors.map((color) => (
-                <div key={color.name} className={styles.colorCard}>
-                    <div className={styles.colorSwatch}>
-                        <div
-                            style={{
-                                background: color.gradient || color.hex,
-                                width: '100%',
-                                height: '100%'
-                            }}
-                        />
-                    </div>
-                    <div className={styles.colorInfo}>
-                        <h3>{color.name}</h3>
-                        {(color.hex || color.gradient) && (
-                            <button
-                                className={styles.hexButton}
-                                onClick={() => copyToClipboard(color.hex || color.gradient || '')}
-                            >
-                                {color.hex || color.gradient}
-                                <span className={styles.copyIndicator}>
-                                    {copiedColor === (color.hex || color.gradient) ? 'Copied!' : 'Click to copy'}
-                                </span>
-                            </button>
-                        )}
-                        {color.description && (
-                            <p className={styles.description}>{color.description}</p>
+            {brandColors.map((color) => {
+                const colorValue = color.gradient || color.hex;
+                return (
+                    <div key={color.name} className={styles.colorCard}>
+                        <div className={styles.colorSwatch}>
+                            <div
+                                style={{
+                                    background: colorValue,
+                                    width: '100%',
+                                    height: '100%'
+                                }}
+                            />
+                        </div>
+                        <div className={styles.colorInfo}>
+                            <h3>{color.name}</h3>
+                            {colorValue && (
+                                <button
+                                    className={styles.hexButton}
+                                    onClick={() => copyToClipboard(colorValue)}
+                                >
+                                    {colorValue}
+                                    <span className={styles.copyIndicator}>
+                                        {copiedColor === colorValue ? 'Copied!' : 'Click to copy'}
+                                    </span>
+                                </button>
                             )}
+                            {color.description && (
+                                <p className={styles.description}>{color.description}</p>
+                            )}
+                        </div>
                     </div>
-                </div>
-            ))}
+                );
+            })}
         </div>
     );
 }
