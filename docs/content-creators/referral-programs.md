@@ -1,14 +1,14 @@
 ---
 title: Referral Programs
-description: Earn rewards by referring new players to ArcAO games
+description: Earn rewards by referring new players to Arc games
 sidebar_position: 2
 ---
 
 # 🔗 Referral Programs  
 ## *Earn Instantly by Sharing the Games You Love*
 
-Welcome to the ArcAO Referral Program — designed specifically for **content creators** who want to **turn their influence into income**.  
-If your content drives new players to ArcAO games like [**RuneRealm**](https://runerealm_game.ar.ionode.online/), you’ll get **paid instantly** — no middlemen, no delays.
+Welcome to the Arc Referral Program — designed specifically for **content creators** who want to **turn their influence into income**.  
+If your content drives new players to Arc games like [**RuneRealm**](https://runerealm_game.ar.ionode.online/), you’ll get **paid instantly** — no middlemen, no delays.
 
 ---
 
@@ -23,7 +23,7 @@ Follow these simple steps to start earning:
    Receive a personalized referral URL to track your success.
 
 3. 🎥 **Create Content**  
-   Stream, post, review, or shout out ArcAO games across your platforms.
+   Stream, post, review, or shout out Arc games across your platforms.
 
 4. 📣 **Share Your Link**  
    Add your referral link to your content — in descriptions, bios, or overlays.
@@ -46,8 +46,8 @@ Follow these simple steps to start earning:
 
 Ready to turn your influence into earnings?
 
-- 🪙 Connect your **Arweave Wallet** through any participating ArcAO game  
+- 🪙 Connect your **Arweave Wallet** through any participating Arc game  
 - 👥 Or reach out to our Creator Support via [Discord](https://discord.com/invite/arc-ao)
 
-The ArcAO Referral Program is **fast, fair, and made for creators like you**.  
+The Arc Referral Program is **fast, fair, and made for creators like you**.  
 **Let’s grow the GameFi revolution — together.**

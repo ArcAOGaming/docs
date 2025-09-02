@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import { AO, ARCAO, RANDAO, RUNEREALM } from '@arcaogaming/project-links';
 
 const config: Config = {
-  title: 'ArcAO',
+  title: 'Arc',
   tagline: 'AAA Game Development DAO',
   favicon: 'img/favicon.ico',
 
@@ -39,7 +39,7 @@ const config: Config = {
           routeBasePath: 'news',
           showReadingTime: true,
           blogTitle: 'News',
-          blogDescription: 'ArcAO News and Updates',
+          blogDescription: 'Arc News and Updates',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -60,7 +60,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/social-card.jpg',
     navbar: {
-      title: 'ArcAO',
+      title: 'Arc',
       logo: {
         alt: 'ArcAO Logo',
         src: 'img/logo_light_mode.png',

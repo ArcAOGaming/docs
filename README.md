@@ -1,4 +1,4 @@
-# ArcAO Documentation Website
+# Arc Documentation Website
 <div align="center">
 
 [![Live Website](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://docs-arcao_game.arnode.xyz/)
