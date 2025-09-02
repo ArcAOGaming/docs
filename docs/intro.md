@@ -5,26 +5,26 @@ sidebar_position: 1
 slug: /
 ---
 
-# 🎮 Welcome to **ArcAO**  
+# 🎮 Welcome to **Arc**  
 ## *The AAA Game Development DAO*
 
 ---
 
 > **"Where GameFi meets the Permaweb."**
 
-ArcAO is a **global, decentralized collective** of over **5,000 Game Developers, Content Creators, Marketers, Investors, and Gamers**.  
+Arc is a **global, decentralized collective** of over **5,000 Game Developers, Content Creators, Marketers, Investors, and Gamers**.  
 Together, we are driving the **GameFi Revolution**, building the future of gaming **by the community, for the community**.
 
 ---
 
 ## 🌍 A Global Force in GameFi  
-From **Paris to Prague**, **New York to Beijing**, ArcAO is powered by a diverse range of talent and culture.  
+From **Paris to Prague**, **New York to Beijing**, Arc is powered by a diverse range of talent and culture.  
 We are **united by a passion for gaming**, and a mission to make next-gen AAA game development **accessible, decentralized, and permanent**.
 
 ---
 
 ## 🛠️ Built on the **Permaweb**  
-All ArcAO-developed games are hosted **permanently** and made **freely accessible to everyone**.  
+All ArO-developed games are hosted **permanently** and made **freely accessible to everyone**.  
 Our foundation on the **Permaweb** ensures:
 
 - ✅ Eternal access to games
@@ -33,7 +33,7 @@ Our foundation on the **Permaweb** ensures:
 
 ---
 
-## 🎯 What Makes ArcAO Different?
+## 🎯 What Makes Arc Different?
 
 - 💥 **DAO-Powered:** All decisions are made by the community, not centralized gatekeepers.
 - 🚀 **AAA Quality Games:** High-end production, community-funded and community-owned.
@@ -50,7 +50,7 @@ Are you a:
 - 🎮 Gamer?  
 - 💼 Investor?  
 
-**ArcAO needs you.**  
+**Arc needs you.**  
 Let’s build the **future of gaming**, together.
 
 ---
@@ -59,11 +59,11 @@ Let’s build the **future of gaming**, together.
 
 Check out our documentation sections:
 
-- [Game Developers](./game-developers/overview) - Resources for building games on ArcAO
+- [Game Developers](./game-developers/overview) - Resources for building games on Arc
 - [Content Creators](./content-creators/overview) - Tools and guides for creators
-- [Gamers](./gamers/overview) - How to play and engage with ArcAO games
+- [Gamers](./gamers/overview) - How to play and engage with Arc games
 - [Investors](./investors/overview) - Investment opportunities and governance
 
 ---
 
-✨ **ArcAO — Power to the Players. Forever.**
+✨ **Arc — Power to the Players. Forever.**

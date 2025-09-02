@@ -9,7 +9,7 @@ export default function MediaKit(): JSX.Element {
     return (
         <Layout
             title="Media Kit"
-            description="ArcAO brand assets, color palette, typography, and media resources">
+            description="Arc brand assets, color palette, typography, and media resources">
             <main className={styles.container}>
                 <aside className={styles.legend}>
                     <div className={styles.legendTitle}>Contents</div>
