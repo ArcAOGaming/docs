@@ -1,0 +1,73 @@
+---
+title: Automated Market Makers (AMMs)
+description: A fun, friendly explainer of Automated Market Makers—what they are, how pricing & fees work.
+sidebar_position: 2
+---
+
+import { BOTEGA, PERMASWAP } from '@arcaogaming/project-links';
+
+# AMMs — The Swap Engine Behind the $GAME
+
+Ever wondered how tokens get swapped in DeFi without any human in the middle?  
+Meet the **AMM (Automated Market Maker)** — your always-on, math-powered trading buddy.
+
+> ⚡ **TL;DR:** You trade tokens *with a pool*, not a person. The smart contract sets the price and takes a small fee. That's it.
+
+---
+
+## 🚀 30-Second Tour: How It Actually Works
+
+1. **Pool Party:** Tokens (like `$GAME` & `$AO`) live in a shared pool.  
+2. **Math Boss:** A formula (yup, `x * y = k`) calculates prices on the fly.  
+3. **No Middlemen:** No need for buyers/sellers to match. The pool handles it.  
+4. **Tiny Tolls:** Every swap pays a small fee — powering the protocol.
+
+---
+
+## 📈 Why Prices Move (The Slippage Shuffle)
+
+- **Constant-Product AMMs** (think Uniswap-style) always keep `x * y = k`.  
+- Buy `$GAME` → the pool holds **less `$GAME`** and **more `$AO`** → **`$GAME` gets pricier**.  
+- This dynamic = **slippage** (prices shift mid-swap) and **arbitrage** (traders balance AMM prices with the broader market).
+
+> 🧠 Think of the AMM as a *rubber band* — pull hard on one side, the other side stretches.
+
+---
+
+## 💸 Fees: The Tiny Tolls That Keep Things Running
+
+Fee tiers you’ll often see:
+
+- **0.01%–0.05%** for ultra-liquid or stable swaps  
+- **0.30%** — the classic  
+- **1.00%+** for exotic or spicy tokens  
+
+These fees are taken **per swap** and routed to the protocol’s stakeholders, treasury, or incentives.  
+If you're building pools, fee tiers directly shape **trader costs** and **pool earnings**.
+
+---
+
+## 🛠 Why Builders & Traders Love AMMs
+
+- **24/7 Liquidity** — No human needed, just smart contracts.  
+- **Composable Magic** — Drop them into dApps, routers, and aggregators.  
+- **Open-Source Brilliance** — Math you can trust, code you can verify.  
+- **Cross-Chain Friendly** — AMMs are everywhere, especially on EVMs.
+
+---
+
+## 🌐 Try AMMs Yourself
+
+Want to see AMMs in action? Check out these live examples:
+
+- <a href={BOTEGA} target="_blank">Botega</a>  
+- <a href={PERMASWAP} target="_blank">Permaswap</a>  
+
+See how price moves as you swap — the pool math at work in real time.
+
+---
+
+## 👉 Next Up
+
+- **[Liquidity Providing](./liquidity-providing.mdx)**  
+- **[$GAME Catalyst](/docs/investors/farming/yield-farming-game.mdx)**
