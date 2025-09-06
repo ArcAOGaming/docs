@@ -1,0 +1,112 @@
+---
+title: Liquidity Providing (LP)
+description: What LPing is, how fees work, where profits come from, core risks (incl. impermanent loss), and a simple mental model.
+sidebar_position: 3
+---
+
+# Liquidity Providing — Make Swaps Your Side Hustle
+
+If you’ve read about **[AMMs (Super Simple)](/defi/amms)**, you already know how swaps happen.  
+Now let’s flip to the other side: **becoming the one who *enables* swaps** and earns fees for it.  
+
+That’s **Liquidity Providing (LP)**. You deposit two tokens (like `$GAME` + `$AO`) into an AMM pool, and in return, you get a cut of every trade.  
+
+It’s like running a tiny, always-on market-making booth… without quitting your day job.  
+
+> ⚡ *TL;DR:* Put tokens in → earn a cut of every trade → let the fees flow.
+
+---
+
+## 🚀 How LPing Works (At a Glance)
+
+1. **Pick a Pool:** e.g., `$GAME / $AO` with a fee tier (0.05%, 0.30%, 1%+).  
+2. **Deposit Equal Value:** Both tokens, 50/50 style.  
+3. **Get LP Receipts:** A token or NFT proving your share.  
+4. **Traders Swap:** Every trade = fees trickling in.  
+5. **Exit Anytime:** Burn your LP receipt to withdraw your share.
+
+---
+
+## 💸 Where Your Yield Comes From
+
+- **Swap Fees:** Tiny % of every trade. (0.01–0.05%, 0.30%, 1%+ depending on pool).  
+- **Incentives (Optional):** Bonus rewards if pools offer them.  
+- **Compounding:** Reinvest fees/rewards → snowball into higher APY.  
+
+> 🧠 **Mental Model:** LPing = **short volatility, long volume.**  
+> - More swaps = more fees.  
+> - Wild price swings = more risk exposure.
+
+---
+
+## 📊 Fees & Volume (The Fun Part)
+
+- **Fee tier** sets both trader cost *and* your income.  
+- **High volume** is king — it drives fee APR.  
+- Bigger pools = lower slippage = more trades… but also more LPs sharing fees.  
+
+**Rule of Thumb:** A healthy pool = strong daily volume relative to TVL.
+
+---
+
+## ⚠️ Impermanent Loss (IL) — The Core LP Risk
+
+When prices drift apart, the AMM rebalances your tokens.  
+Sometimes, you’d have been richer just holding. That’s IL.  
+
+- **Lower IL:** Stable/pegged pairs.  
+- **Higher IL:** Volatile, uncorrelated pairs.  
+
+> ✏️ **Quick intuition:** If one token 2×’s vs the other, a 50/50 LP under constant-product rules loses ~5–6% vs HODL (before fees). Strong fees may offset this… but not guaranteed.
+
+**Mitigations:**  
+- Start with correlated pairs.  
+- Match fee tier to volatility.  
+- Don’t chase unsustainable yields.  
+- Monitor pool health & divergence.
+
+---
+
+## 🔢 Simple Walkthrough (Numbers Time)
+
+You LP with **$1,000 `$GAME` + $1,000 `$AO`** in a **0.30% pool**.  
+- Pool processes **$500,000** in swaps in a week.  
+- Fees = **$1,500** total.  
+- Your 2% share = **$30 fees** for that week.  
+- Final PnL depends on `$GAME` vs `$AO` price movement (IL could subtract, fees could outpace it).
+
+---
+
+## 🎟 What You Actually Hold
+
+- **LP Tokens (v2-style):** Fungible ERC-20 share of the pool.  
+- **NFT LP Positions (v3-style):** Define your price range. In-range = higher fee yield; out-of-range = nada.  
+
+> 📌 Always check pool docs for fee claiming + incentive options.
+
+---
+
+## ✅ Best-Practice Checklist
+
+- Start **small** — learn UX & risks first.  
+- Prefer **high-volume, sensible-fee** pools.  
+- Track **volume, fees, price moves** regularly.  
+- Harvest/compound on a **gas-friendly cadence**.  
+- ⚠️ Avoid unaudited “degen” farms unless you’re comfortable with full risk.  
+- ⚠️ Don’t overexpose to one pool/protocol. Diversify.
+
+---
+
+## 📚 Quick Glossary
+
+- **AMM:** Automated Market Maker (swap engine).  
+- **LP:** Liquidity Provider (you) or the position itself.  
+- **Fee Tier:** Swap cost setting (0.05%, 0.30%, etc.).  
+- **IL:** Impermanent Loss = underperformance vs HODL.  
+- **TVL:** Total Value Locked in a pool/protocol.
+
+---
+
+## 👉 Next Up
+
+- **[$GAME Catalyst](/docs/investors/farming/yield-farming-game.mdx)**
